@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		var MyTeacher = new Object();
+		MyTeacher.surname = "Утралинова ";
+		MyTeacher.name = "Сагынай ";
+		MyTeacher.patronymic = "Маратовна ";
+		MyTeacher.ocupation = ["Преподователь", "Классный Руководитель"];
+		MyTeacher.degree = ["Высшее", "Среднее Общее"];
+		MyTeacher.category = "Первая";
+		MyTeacher.education = ["Мгту", "Школа"];
+		MyTeacher.discipline = ["Разработка кода инф. систем", "Информатика", "Основы программирования"];
+		MyTeacher.note = "none";
+
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<h1 align="center">Введение в JavaScript</h1>
+	</header>
+
+	<div class="content" style=" font-size: large;">
+		<script>
+
+			let line = `
+			<h3> 
+				${MyTeacher.surname} ${MyTeacher.name} ${MyTeacher.patronymic}
+			</h3>
+			<p><i>Должность:</i> 
+				<ul>
+				<li>${MyTeacher.ocupation[0]}</li>
+				<li>${MyTeacher.ocupation[1]}</li>
+				</ul>
+				 </p>
+
+					<p><i>Уровень образования:</i> 
+				<ul>
+				<li>${MyTeacher.degree[0]}</li>
+				<li>${MyTeacher.degree[1]}</li>
+				</ul>
+				 </p>
+					<p><i>Категория:</i> ${MyTeacher.category} </p>
+
+					<p><i>Образование:</i> 
+				<ul>
+				<li>${MyTeacher.education[0]}</li>
+				<li>${MyTeacher.education[1]}</li>
+				</ul>
+				 </p>
+
+							<p><i>Дисциплина:</i><ul>
+				<li>${MyTeacher.discipline[0]}</li>
+				<li>${MyTeacher.discipline[1]}</li>
+				<li>${MyTeacher.discipline[2]}</li>
+				</ul>
+				</p>
+								<p><i>Примечание:</i> ${MyTeacher.note} </p>
+`;
+
+			document.write(line);
+		</script>
+	</div>
+
+	<footer align="center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+
+</html>

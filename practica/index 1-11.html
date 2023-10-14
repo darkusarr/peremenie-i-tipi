@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		var MyTeacher = new Object();
+		MyTeacher.surname = "Утралинова "
+		MyTeacher.name = "Сагынай "
+		MyTeacher.patronymic = "Маратовна "
+		MyTeacher.ocupation = "Преподователь"
+		MyTeacher.degree = "Высшее"
+		MyTeacher.category = "Первая"
+		MyTeacher.education = "МГТУ"
+		MyTeacher.discipline = "Разработка кода"
+		MyTeacher.note = "none"
+
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<h1 align="center">Введение в JavaScript</h1>
+	</header>
+
+	<div class="content" style="text-align: center; font-size: large;">
+		<script>
+
+			let line = `
+			<h3> 
+				${MyTeacher.surname} ${MyTeacher.name} ${MyTeacher.patronymic}
+			</h3>
+			<p><i>Должность:</i> ${MyTeacher.ocupation} </p>
+				<p><i>Уровень образования:</i> ${MyTeacher.degree} </p>
+					<p><i>Категория:</i> ${MyTeacher.category} </p>
+						<p><i>Образование:</i> ${MyTeacher.education} </p>
+							<p><i>Дисциплина:</i> ${MyTeacher.discipline} </p>
+								<p><i>Примечание:</i> ${MyTeacher.note} </p>
+`;
+
+			document.write(line);
+		</script>
+	</div>
+
+	<footer align="center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+
+</html>
